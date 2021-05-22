@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Avatar from 'react-avatar-edit';
-import axios from 'axios';
+import { httpClient as axios } from '../http';
 
 const AvatarComponent = ({ closeModal, username, avatar, rerender}) => {
 

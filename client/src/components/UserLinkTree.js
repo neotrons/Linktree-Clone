@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { httpClient as axios } from '../http';
 import UserHeader from './UserHeader';
 import Link from './Link';
 import NotFound from './NotFound';

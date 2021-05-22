@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import { httpClient as axios } from '../http';
 import '../themes.css';
 
 const Theme = ({ activeTheme, username, theme, rerender }) => {
