@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { httpClient as axios } from '../http';
 import formValidation from './FormValidation';
 import inputErrors from './InputErrors';
 import editSVG from '../imgs/edit.svg';

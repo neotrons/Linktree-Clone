@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Admin from './Admin';
 import Edit from './Edit';
-import axios from 'axios';
+import { httpClient as axios } from '../http';
 import ClipLoader from 'react-spinners/ClipLoader';
 import Settings from './Settings';
 

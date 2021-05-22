@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { httpClient as axios } from '../http';
 import AdminHeader from './AdminHeader';
 import Theme from './Theme';
 import defaultAvatar from '../imgs/default.png';

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { httpClient as axios } from '../http';
 import ClipLoader from 'react-spinners/ClipLoader';
 import EditableLink from './EditableLink';
 import AdminHeader from './AdminHeader';
