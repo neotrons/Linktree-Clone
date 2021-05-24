@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Avatar from 'react-avatar-edit';
 import { httpClient as axios } from '../http';
+import { enviroment } from '../config';
 
 const AvatarComponent = ({ closeModal, username, avatar, rerender}) => {
 
@@ -67,6 +68,8 @@ const submitAvatar = () => {
 
   closeModal();
 }
+
+avatar = `${enviroment.uploadUrl}${avatar}`;
 
   return (
     <>

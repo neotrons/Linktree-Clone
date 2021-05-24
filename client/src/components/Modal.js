@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Model from 'react-modal';
 import AvatarComponent from './AvatarComponent';
 import ClipLoader from 'react-spinners/ClipLoader';
+import { enviroment } from '../config';
 
 const modalStyle = {
   content: {
@@ -23,6 +24,7 @@ const modalStyle = {
 
 const Modal = ({ username, avatar, rerender }) => {
 
+  avatar = `${enviroment.uploadUrl}${avatar}`;
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
